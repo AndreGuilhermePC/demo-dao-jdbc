@@ -14,6 +14,6 @@ public interface Sellerdao {
 	//Essa operação vai ser responsável por pegar ID e consultar no banco de dados um obj que tenha esse ID, se existir vai retornar e se não retorna null 
 	Seller findById(Integer id);
 	
-	//Para retornar todos os departamententos
+	//Para retornar todos os departamentos
 	List<Seller> findAll();
 }
