@@ -3,20 +3,19 @@ package model.entities;
 import java.io.Serializable;
 import java.util.Objects;
 
-public class Departament implements Serializable {
-	
+public class Department implements Serializable{
+
 	private static final long serialVersionUID = 1L;
-	
+
 	private Integer id;
-	private String name;
+	private String nome;
 	
-	public Departament() {
-		super();
+	public Department() {
 	}
 
-	public Departament(Integer id, String name) {
+	public Department(Integer id, String nome) {
 		this.id = id;
-		this.name = name;
+		this.nome = nome;
 	}
 
 	public Integer getId() {
@@ -27,12 +26,12 @@ public class Departament implements Serializable {
 		this.id = id;
 	}
 
-	public String getName() {
-		return name;
+	public String getNome() {
+		return nome;
 	}
 
-	public void setName(String name) {
-		this.name = name;
+	public void setNome(String nome) {
+		this.nome = nome;
 	}
 
 	@Override
@@ -48,12 +47,12 @@ public class Departament implements Serializable {
 			return false;
 		if (getClass() != obj.getClass())
 			return false;
-		Departament other = (Departament) obj;
+		Department other = (Department) obj;
 		return Objects.equals(id, other.id);
 	}
 
 	@Override
 	public String toString() {
-		return "Departament [id=" + id + ", name=" + name + "]";
+		return "Department [id=" + id + ", nome=" + nome + "]";
 	}
 }
